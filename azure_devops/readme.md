@@ -96,7 +96,9 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Click the `Codespaces` tab
     - Click `New Codespace`
     - Wait a couple minutes, then verify that the codespace starts up. Once it is fully booted up, the termininal should be present.
-2. Run Valet
+2. Install the GitHub CLI Valet extension.
+    -  
+4. Run Valet
     - Verify you are in the Visual Studio Code terminal
     - Change to the Valet directory by typing `cd scripts`
     - Run the valet command by typing `valet`. Verify that Valet details all commands.
