@@ -11,11 +11,11 @@ You will use the codespace preconfigured in this repository to perform the audit
 
 1. Navigate to the codespace Visual Studio Code terminal 
 2. Verify you are in the scripts directory
-3. Now, from the `./scripts` folder in your repository, run Valet to verify your Azure DevOps configuration:
+3. Now, from the `./valet` folder in your repository, run Valet to verify your Azure DevOps configuration:
   
 ```
-cd scripts
-valet audit azure-devops --output-dir . 
+cd valet
+gh valet audit azure-devops --output-dir . 
 ```
 ### Example
 ![runaudit](https://user-images.githubusercontent.com/26442605/160930617-d4d2f4a8-7b39-47d6-ab2c-60868cb56e5f.png)
