@@ -23,8 +23,8 @@ AZURE_DEVOPS_ACCESS_TOKEN=<Token Generated>
 
 ## Identify the Azure DevOps pipeline ID to use
 You will need the `valet-mapper-example` Azure DevOps pipeline ID to perform the migration
-1. Go to the `scripts/ValetBootstrap/pipelines` folder
-2. Open the `scripts/ValetBootstrap/pipelines/valet-mapper-example.config.json` file
+1. Go to the `valet/ValetBootstrap/pipelines` folder
+2. Open the `valet/ValetBootstrap/pipelines/valet-mapper-example.config.json` file
 3. Look for the `web - href` link
 4. At the end of the link is the pipeline ID. Copy or note the ID.
 
@@ -85,10 +85,10 @@ end
 Run the `migrate` command with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
 
 ```
-cd scripts
-valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb
+cd valet
+gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb
 ```
-Now, from the `./scripts` folder in your repository, run `valet migrate` with the custom transformer to migrate the pipeline to GitHub Actions: 
+Now, from the `./valet` folder in your repository, run `valet migrate` with the custom transformer to migrate the pipeline to GitHub Actions: 
 
 ### Example
 ![mapper-ex2](https://user-images.githubusercontent.com/26442605/161116637-15c01950-ede0-4992-876b-6a3fe5688723.png)
