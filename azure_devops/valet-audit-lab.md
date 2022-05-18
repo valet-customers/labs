@@ -23,7 +23,7 @@ AZURE_DEVOPS_ACCESS_TOKEN=<Token Generated>
 You will use the codespace preconfigured in this repository to perform the audit.
 
 1. Navigate to the codespace Visual Studio Code terminal 
-2. Verify you are in the scripts directory
+2. Verify you are in the `valet` directory
 3. Now, from the `./valet` folder in your repository, run Valet to verify your Azure DevOps configuration:
   
 ```
@@ -39,9 +39,9 @@ gh valet audit azure-devops --output-dir .
 ![audit-output](https://user-images.githubusercontent.com/26442605/161104845-3d9d7493-794f-4787-9a89-3dd3c15a8a8d.png)
 
 ## View audit output
-The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located in the scripts folder.
+The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located in the `valet` folder.
 
-1. Under the `scripts` folder find the `audit_summary.md`
+1. Under the `valet` folder find the `audit_summary.md`
 2. Right-click the `auditsummary.md` file and select `Open Preview`
 3. The file contains the audit summary details about what can and can't be migrated to GitHub Actions.
 4. Review the file.
