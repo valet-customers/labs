@@ -1,5 +1,10 @@
 # Migrate an Azure DevOps pipeline to GitHub Actions with a custom transformer
-In this lab, you will create a custom plugin that transforms some of the existing migration mapping and replaces it with your own mapping.
+In this lab, you will create a custom plugin that transforms some of the existing migration mapping and replaces it with your own mapping. Then use the `migrate` subcommand to migrate the pipeline. The `migrate` subcommand can be used to convert a pipeline to its GitHub Actions equivalent and then create a pull request with the contents.
+
+- [Prerequisites](#prerequisites)
+- [Identify the Azure DevOps pipeline ID to use](#identify-the-azure-devops-pipeline-id-to-use)
+- [Create a custom transformer](#create-a-custom-transformer)
+- [View the pull request](#view-the-pull-request)
 
 ## Prerequisites
 
