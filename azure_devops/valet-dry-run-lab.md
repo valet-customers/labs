@@ -22,8 +22,8 @@ AZURE_DEVOPS_ACCESS_TOKEN=<Token Generated>
 
 ## Identify the Azure DevOps pipeline ID to use
 You will need a pipeline ID to perform the dry run
-1. Go to the `scripts/ValetBootstrap/pipelines` folder
-2. Open the `scripts/ValetBootstrap/pipelines/valet-mapper-example.config.json` file
+1. Go to the `valet/ValetBootstrap/pipelines` folder
+2. Open the `valet/ValetBootstrap/pipelines/valet-mapper-example.config.json` file
 3. Look for the `web - href` link
 4. At the end of the link is the pipeline ID. Copy or note the ID.
 
@@ -35,22 +35,22 @@ You will need a pipeline ID to perform the dry run
 You will use the codespace preconfigured in this repository to perform the dry run.
 
 1. Navigate to the codespace Visual Studio Code terminal 
-2. Verify you are in the scripts directory
+2. Verify you are in the `valet` directory
 3. Copy the following command and replace:
    - `GITHUB-ORG` with the name of your organization. 
    - `GITHUB-REPO` with the name of your repository. 
    - `PIPELINE-ID` with your pipeline ID.
   
 ```
-cd scripts
-valet dry-run azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --output-dir .dry-runs
+cd valet
+gh valet dry-run azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --output-dir .dry-runs
 ```
-4. Now, from the `./scripts` folder in your repository, run `valet dry-run` to see the output: 
+4. Now, from the `./valet` folder in your repository, run `valet dry-run` to see the output: 
 
 ### Example
 ![dryrun-ex2](https://user-images.githubusercontent.com/26442605/161107259-39076729-2ac8-4104-8170-11061b732593.png)
 
-4. Valet will create a folder called `dry-runs` under the scripts folder that shows what will be migrated.  
+4. Valet will create a folder called `dry-runs` under the `valet` folder that shows what will be migrated.  
 
 ### Example
 ![dryrun-output](https://user-images.githubusercontent.com/26442605/161106810-6a48b261-8099-449b-a41c-3d1e0903485a.png)
