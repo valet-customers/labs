@@ -1,6 +1,11 @@
 # Migrate an Azure DevOps pipeline to GitHub Actions 
 In this lab, you will use the Valet `migrate` command to migrate an Azure DevOps pipeline to GitHub Actions. The `migrate` subcommand can be used to convert a pipeline to its GitHub Actions equivalent and then create a pull request with the contents.
 
+- [Prerequisites](#prerequisites)
+- [Identify the Azure DevOps pipeline ID to use](#identify-the-azure-devops-pipeline-id-to-use)
+- [Perform a migration](#perform-a-migration)
+- [View the pull request](#view-the-pull-request)
+
 ## Prerequisites
 
 1. Follow all steps [here](/labs/azure_devops#readme) to set up your environment
