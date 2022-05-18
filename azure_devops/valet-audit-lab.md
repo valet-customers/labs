@@ -1,5 +1,10 @@
 # Audit Azure DevOps pipelines using the Valet audit command
-In this lab, you will use Valet to audit Azure DevOps pipelines in an Azure DevOps project.
+In this lab, you will use Valet to `audit` Azure DevOps pipelines in an Azure DevOps project. The `audit` subcommand can be used to scan a CI server and output a summary of the current pipelines. This summary can then be used to plan timelines for migrating to GitHub Actions.
+
+- [Prerequisites](#prerequisites)
+- [Perform an audit](#perform-an-audit)
+- [View audit output](#view-audit-output)
+- [Review the pipelines](#review-the-pipelines)
 
 ## Prerequisites
 
