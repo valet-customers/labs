@@ -36,12 +36,12 @@ cd valet
 gh valet audit azure-devops --output-dir . 
 ```
 ### Example
-![runaudit](https://user-images.githubusercontent.com/26442605/160930617-d4d2f4a8-7b39-47d6-ab2c-60868cb56e5f.png)
+![valet-audit-1](https://user-images.githubusercontent.com/26442605/169615028-696dad13-ff83-41a7-b475-0ab8c0bbcd65.png)
 
 4. Valet displays green log files to indicate a successful audit  
 
 ### Example
-![audit-output](https://user-images.githubusercontent.com/26442605/161104845-3d9d7493-794f-4787-9a89-3dd3c15a8a8d.png)
+![valet-audit-2](https://user-images.githubusercontent.com/26442605/169615218-a8a3199d-a436-4d70-8c1e-17a61b089eb6.png)
 
 ## View audit output
 The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located in the `valet` folder.
@@ -52,11 +52,12 @@ The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located 
 4. Review the file.
 
 ### Example
-![audit-summary](https://user-images.githubusercontent.com/26442605/161105335-4c38ea73-b5a5-4edc-9d89-d6febcae46d4.png)
+![valet-audit-3](https://user-images.githubusercontent.com/26442605/169615428-26f7a962-2064-46d0-8206-ea930109b252.png)
 
 ## Review the pipelines
 The `audit` command grabs the yml, classic, and release pipelines from Azure DevOps and converts them to GitHub Actions.
 
 ### Example
 View the source yml and the proposed GitHub yml
-![audit-pipelines](https://user-images.githubusercontent.com/26442605/161105649-dd20235d-bb98-4949-baa3-dac561427257.png)
+![valet-audit-4](https://user-images.githubusercontent.com/26442605/169615630-8d700081-c631-4b2a-ab1c-e52503f7838f.png)
+
