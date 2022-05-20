@@ -48,17 +48,19 @@ You will use the codespace preconfigured in this repository to perform the migra
 4. Now, from the `./valet` folder in your repository, run `valet migrate` to migrate the pipeline to GitHub Actions. 
 ```
 cd valet
-gh migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID
+gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --output-dir .migrate
 ```
 
 ### Example
-![migrate-command](https://user-images.githubusercontent.com/26442605/161110277-45d9fff0-9d45-4946-a2a7-8f82fbb5d43f.png)
+![valet-migrate-1](https://user-images.githubusercontent.com/26442605/169617557-289cee54-0116-4d13-8e6f-a9d0508259e1.png)
+
 
 5. Valet will create a pull request directly to your GitHub repository.
 6. Click the green pull request link in the output of the migrate command. See below.
 
 ### Example
-![migrateoutput](https://user-images.githubusercontent.com/26442605/167672012-0580a215-29d4-4aff-a730-3e769414b1b7.png)
+![valet-migrate-5](https://user-images.githubusercontent.com/26442605/169617699-ce0c0720-8830-46ed-811d-c2fe1ccf06ea.png)
+
 
 ## View the pull request
 The migrate output will show you the pull request on GitHub.
