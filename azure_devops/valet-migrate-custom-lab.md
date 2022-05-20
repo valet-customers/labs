@@ -37,6 +37,7 @@ You will need the `valet-mapper-example` Azure DevOps pipeline ID to perform the
 ![configpipelineid](https://user-images.githubusercontent.com/26442605/161106098-3b9b05ec-ee5d-4b21-ab07-9f05f8cf1d98.png)
 
 ## Create a custom transformer
+
 To create a transformer, you need to create a Ruby file that looks as follows:
 ``` ruby
 transform "azuredevopstaskname" do |item|
@@ -44,7 +45,9 @@ transform "azuredevopstaskname" do |item|
   end
 ```  
 
-We start by changing the function name to match the Azure DevOps task name `DotNetCoreCLI@2`.
+We start by creating a new folder called `plugin` under the `valet` folder in your repository. In there create a file called `DotNetCoreCLI.rb`.
+
+Next change the function name to match the Azure DevOps task name `DotNetCoreCLI@2`.
 The way you find this name is by clicking the **view yaml** button at a task in the pipeline:
 
 This results in the following code:
@@ -55,13 +58,6 @@ transform "DotNetCoreCLI@2" do |item|
 ```  
 The parameter item is a collection of items than contain the properties of the original task that was retrieved from Azure DevOps.
 In this case we can see in the yaml that the properties that are set are `command` and `projects`.
-
-This is what you can expect to find when we would dump the information. To determine what is in the item being passed, you can do the following:
-``` ruby
-transform "DotNetCoreCLI@2" do |item|
-   puts item
-  end
-```  
    
 Add the following code to the ruby file:
 ``` Ruby
@@ -91,12 +87,12 @@ Run the `migrate` command with the transformer again and pass it the custom plug
 
 ```
 cd valet
-gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb
+gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb --output-dir .migrate
 ```
-Now, from the `./valet` folder in your repository, run `valet migrate` with the custom transformer to migrate the pipeline to GitHub Actions: 
+Now, from the `./valet` folder in your repository, run `gh valet migrate` with the custom transformer to migrate the pipeline to GitHub Actions: 
 
 ### Example
-![mapper-ex2](https://user-images.githubusercontent.com/26442605/161116637-15c01950-ede0-4992-876b-6a3fe5688723.png)
+![valet-cm-1](https://user-images.githubusercontent.com/26442605/169618556-7c79b34b-6d4c-48d5-98e5-7f8d771117a5.png)
 
 ## View the pull request
 The migrate output will show you the pull request on GitHub. Note here that the checks on the pull request all passed!
