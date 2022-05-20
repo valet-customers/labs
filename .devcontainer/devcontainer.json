@@ -17,5 +17,5 @@
 	"extensions": [
 		"ms-azuretools.vscode-docker",
 	],
-	"postCreateCommand": "docker login ghcr.io/valet-customers --username ${GITHUB_USER} --password ${VALET_PASSWORD} && docker pull ghcr.io/valet-customers/valet-cli:latest && #!/usr/bin/env pwsh ./azure_devops/bootstrap/updateEnvs.ps1 -ghPAT ${VALET_PASSWORD} -azdoPAT ${AZDO_TOKEN} -org ${AZDO_ORG} -proj ${AZDO_PROJECT} || echo 'Could not auto-build. Skipping.' "
+	"postCreateCommand": "docker login ghcr.io/valet-customers --username ${GITHUB_USER} --password ${VALET_PASSWORD} && docker pull ghcr.io/valet-customers/valet-cli:latest && sudo bash .devcontainer/setenvars.sh ${AZDO_PROJECT} ${AZDO_ORG} ${VALET_PASSWORD} ${AZDO_TOKEN} https://github.com/  || echo 'Could not auto-build. Skipping.' "
 }
