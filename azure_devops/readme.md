@@ -99,7 +99,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
 2. Verify Valet CLI is installed and working. More information on the [GitHub Valet CLI extension](https://github.com/github/gh-valet)
     -  Verify Valet CLI is installed and working
     -  Run `gh valet` in the Visual Studio Code terminal and verify the output looks like this image:
-    -  Start using Valet by going through the [Labs for Azure DevOps](#labs-for-azure-devops)
+    -  Start using Valet by following along with the [Labs for Azure DevOps](#labs-for-azure-devops)
     
 ### Example ###
 ![valet-gh-cli](https://user-images.githubusercontent.com/26442605/168842098-45dfe434-fdab-43a6-9a50-0360ec8b85e1.png)
