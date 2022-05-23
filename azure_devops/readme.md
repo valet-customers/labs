@@ -96,14 +96,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Click the `Codespaces` tab
     - Click `New Codespace`
     - Wait a couple minutes, then verify that the codespace starts up. Once it is fully booted up, the termininal should be present.
-2. Install the GitHub CLI Valet extension. More information on the [GitHub Valet CLI extension](https://github.com/github/gh-valet)
-    -  Verify you are in the Visual Studio Code terminal
-    -  Runn this command to install the GitHub Valet extension
-    -  `gh extension install github/gh-valet`
-    -  Verify the result of the install is: `✓ Installed extension github/gh-valet`
-    -  If you get a similiar error to the following, click the link to authorize the token
-          ![linktolcickauth](https://user-images.githubusercontent.com/26442605/169588015-9414404f-82b6-4d0f-89d4-5f0e6941b029.png)
-       - Restart Codespace after clicking the link
+2. Verify Valet CLI is installed and working. More information on the [GitHub Valet CLI extension](https://github.com/github/gh-valet)
     -  Verify Valet CLI is installed and working
     -  Run `gh valet` in the Visual Studio Code terminal and verify the output looks like this image:
     -  Start using Valet by going through the [Labs for Azure DevOps](#labs-for-azure-devops)
