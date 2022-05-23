@@ -33,8 +33,8 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
 3. Create a GitHub personal access token. 
     - To do so, navigate to your GitHub `Settings` - click your profile photo and then click `Settings`.
     - Go to `Developer Settings`
-    - Go to `Personal Access Tokens` -> `Legacy tokens`
-    - Click `Generate new token` -> `Legacy tokens`. If required, provide your password.
+    - Go to `Personal Access Tokens` -> `Legacy tokens (if present)`
+    - Click `Generate new token` -> `Legacy tokens (if present)`. If required, provide your password.
     - Select at least these scopes: `read packages` and `workflow`. Optionally, provide a text in the **Note** field and change the expiration.
     - Click `Generate token`
     - Copy the PAT somewhere safe and temporary.
