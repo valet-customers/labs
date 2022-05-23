@@ -32,7 +32,6 @@ You will use the codespace preconfigured in this repository to perform the audit
 3. Now, from the `./valet` folder in your repository, run Valet to verify your Azure DevOps configuration:
   
 ```
-cd valet
 gh valet audit azure-devops --output-dir . 
 ```
 ### Example
