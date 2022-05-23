@@ -1,5 +1,5 @@
 # Dry run the migration of an Azure DevOps pipeline to GitHub Actions
-In this lab, you will use the `valet dry-run` command on one Azure DevOps pipeline. The `dry-run` subcommand can be used to convert a pipeline to its GitHub Actions equivalent and write the workflow to your local filesystem.
+In this lab, you will use the `valet dry-run` command to convert an Azure DevOps pipeline to it's equivalent GitHub Actions workflow and write the workflow to your local filesystem.
 
 - [Prerequisites](#prerequisites)
 - [Identify the Azure DevOps pipeline ID to use](#identify-the-azure-devops-pipeline-id-to-use)
