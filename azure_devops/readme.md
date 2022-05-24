@@ -103,12 +103,12 @@ Run the Actions workflow:
     - Wait a couple minutes, then verify that the codespace starts up. Once it is fully booted up, the termininal should be present.
 2. Verify Valet CLI is installed and working. More information on the [GitHub Valet CLI extension](https://github.com/github/gh-valet)
     -  Verify Valet CLI is installed and working
-    -  Run `gh valet` in the Visual Studio Code terminal and verify the output looks like this image:
+    -  Run `gh valet version` in the Visual Studio Code terminal and verify the output looks like the below image.
+       -  If `gh valet version` did not produce a similar image please follow these instructions [Troubleshoot GH Valet extension](#troubleshoot-gh-valet-extension)
     -  Start using Valet by following along with the [Labs for Azure DevOps](#labs-for-azure-devops)
     
 ### Example ###
-![valet-gh-cli](https://user-images.githubusercontent.com/26442605/168842098-45dfe434-fdab-43a6-9a50-0360ec8b85e1.png)
-
+![gh-valet-version](https://user-images.githubusercontent.com/26442605/170106559-e69e669f-a1f6-4c2c-8998-3f089b899704.png)
 
 ## Labs for Azure DevOps
 Perform the following labs to test-drive Valet
@@ -117,3 +117,14 @@ Perform the following labs to test-drive Valet
 - [Migrate an Azure DevOps pipeline to GitHub Actions](valet-migrate-lab.md)
 - [Migrate an Azure DevOps pipeline to GitHub Actions with a custom transformer](valet-migrate-custom-lab.md)
 - [Forecast: Valet forecast lab](valet-forecast-lab.md)
+
+## Troubleshoot GH Valet extension
+Manually Install the GitHub CLI Valet extension. More information on the [GitHub Valet CLI extension](https://github.com/github/gh-valet)
+-  Verify you are in the Visual Studio Code terminal
+-  Run this command to install the GitHub Valet extension
+-  `gh extension install github/gh-valet`
+-  Verify the result of the install is: `✓ Installed extension github/gh-valet`
+-  If you get a similiar error to the following, click the link to authorize the token
+      ![linktolcickauth](https://user-images.githubusercontent.com/26442605/169588015-9414404f-82b6-4d0f-89d4-5f0e6941b029.png)
+   - Restart Codespace after clicking the link
+-  Verify Valet CLI is installed and working
