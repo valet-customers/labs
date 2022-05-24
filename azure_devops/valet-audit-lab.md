@@ -10,7 +10,7 @@ In this lab, you will use Valet to `audit` an Azure DevOps organization. The `au
 
 1. Follow all steps [here](/labs/azure_devops#readme) to set up your environment
 2. Create or start a codespace in this repository (if not started)
-3. Verify or add the following values to the `./valet/.env.local` file. All values were created [here](/labs/azure_devops#readme)
+3. Verify or add the following values to the `valet/.env.local` file. All values were created [here](/labs/azure_devops#readme)
 ```
 GITHUB_ACCESS_TOKEN=<GithHub PAT generated>
 GITHUB_INSTANCE_URL=https://github.com/
@@ -29,7 +29,7 @@ You will use the codespace preconfigured in this repository to perform the audit
 
 1. Navigate to the codespace Visual Studio Code terminal 
 2. Verify you are in the `valet` directory
-3. Now, from the `./valet` folder in your repository, run Valet to verify your Azure DevOps configuration:
+3. Now, from the `valet` folder in your repository, run Valet to verify your Azure DevOps configuration:
   
 ```
 gh valet audit azure-devops --output-dir . 
