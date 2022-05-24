@@ -43,7 +43,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Find `Secrets` and click the down arrow
     - Click `Codespaces`
     - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `VALET_PASSWORD`
+    - Name the secret `VALET_GHCR_PASSWORD`
     - Paste in the GitHub PAT generated previously
     - Click `Add Secret`
 
