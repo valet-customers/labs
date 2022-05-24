@@ -46,7 +46,7 @@ gh valet audit azure-devops --output-dir .
 The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located in the `valet` folder.
 
 1. Under the `valet` folder find the `audit_summary.md`
-2. Right-click the `auditsummary.md` file and select `Open Preview`
+2. Right-click the `audit_summary.md` file and select `Open Preview`
 3. The file contains the audit summary details about what can and can't be migrated to GitHub Actions.
 4. Review the file.
 
