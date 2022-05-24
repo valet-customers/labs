@@ -29,7 +29,7 @@ AZURE_DEVOPS_ACCESS_TOKEN=<Token Generated>
 You will need a pipeline ID to perform the dry run
 1. Go to the `valet/ValetBootstrap/pipelines` folder
 2. Open the `valet/ValetBootstrap/pipelines/valet-pipeline1.json` file
-3. Look for the `web - href` link
+3. Look for the `$.web.href` link
 4. At the end of the link is the pipeline ID. Copy or note the ID.
 
 ### Example
