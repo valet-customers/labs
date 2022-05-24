@@ -82,6 +82,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Input the Azure DevOps Organization name identified above
     - Input the Azure DevOps user name of the user that created the Azure DevOps PAT above. This will be an email address
     - Accept the default Azure DevOps project name or change it to one of your preference
+       - NOTE: The default project name is `ValetBootstrap`. This must be unique in your Azure DevOps Organization. If not, please choose a unique name.
     - Click `Run Workflow`
     - Verify the workflow completed successfully
 
