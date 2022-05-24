@@ -47,7 +47,7 @@ The audit summary, logs, Azure DevOps yml, and GitHub yml should all be located 
 
 1. Under the `valet` folder find the `audit_summary.md`
 2. Right-click the `audit_summary.md` file and select `Open Preview`
-3. The file contains the audit summary details about what can and can't be migrated to GitHub Actions.
+3. The file contains details about your current pipelines and what can be migrated 100% automatically vs. what will need some manual intervention or aren't supported by GitHub Actions.
 4. Review the file.
 
 ### Example
