@@ -44,7 +44,7 @@ You will use the codespace preconfigured in this repository to perform the dry r
 ```
 gh valet dry-run azure-devops pipeline --pipeline-id PIPELINE-ID --output-dir dry-runs
 ```
-3. Now, from the `./valet` folder in your repository, run `gh valet dry-run` to see the output: 
+3. Now, from the `valet` folder in your repository, run `gh valet dry-run` to see the output: 
 
 ### Example
 ![valet-dr-1](https://user-images.githubusercontent.com/26442605/169616149-46c2d743-47fe-4061-a48a-7f21442624cb.png)
