@@ -4,6 +4,8 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
 
 - [Use this Repo as a template](#repo-template)
 - [Prerequisites](#prerequisites)
+- [Codespace secrets](#codespace-secrets)
+- [Action secrets](#action-secrets)
 - [Azure DevOps project creation](#azure-devops-project-creation)
 - [Use Valet with a codespace](#use-valet-with-a-codespace)
 - [Labs for Azure DevOps](#labs-for-azure-devops)
@@ -14,8 +16,11 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
 
 ## Prerequisites
 1. Azure DevOps organization. Please identify or create an Azure DevOps organization to use: [Click to create an Azure DevOps Org](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fget-started%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
-    - Note and store the organization name for later.
-2. Create an Azure DevOps personal access token with the following scopes:
+    - Note and store the Azure DevOp sorganization name for later.
+    - Note and store the user name you use for your Azure DevOps Organization. It will be an email address.
+2. Azure DevOps Project. The default project name for this lab is `ValetBootstrap` There is an Action workflow that will create and populate the Azure DevOps project. No need to create it yourself. Note: The project has to be unique in the Azure DevOps organization. If you already have a project name `ValetBootstrap` please pick a differnt unique project name. 
+    - Note and store the Azure DevOps project name for later.
+3. Create an Azure DevOps personal access token with the following scopes:
     -   To do so, navigate to Sign in to your organization `https://dev.azure.com/{yourorganization}`.
     -   From your home page, open `user settings`, and then select `Personal access tokens`.
     -   Select `+ New Token`
@@ -30,7 +35,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
         -   Variable Groups: `Read`
     -   Click `Create`
     -   Copy the PAT somewhere safe and temporary.
-3. Create a GitHub personal access token. 
+4. Create a GitHub personal access token. 
     - To do so, navigate to your GitHub `Settings` - click your profile photo and then click `Settings`.
     - Go to `Developer Settings`
     - Go to `Personal Access Tokens` -> `Legacy tokens (if present)`
@@ -38,53 +43,52 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Select at least these scopes: `read packages` and `workflow`. Optionally, provide a text in the **Note** field and change the expiration.
     - Click `Generate token`
     - Copy the PAT somewhere safe and temporary.
-4. Add GitHub personal access token to the CODESPACES **Secrets** tab.
-    - Navigate to the `Settings` tab in your repo
-    - Find `Secrets` and click the down arrow
-    - Click `Codespaces`
-    - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `VALET_GHCR_PASSWORD`
-    - Paste in the GitHub PAT generated previously
-    - Click `Add Secret`
+
+## Codespace secrets
+Please add the following Codespace secrets.
+
+- `VALET_GHCR_PASSWORD`: Add `VALET_GHCR_PASSWORD` as the `Name` and the GitHub personal access token created above as the value.
+- `AZURE_DEVOPS_ACCESS_TOKEN`: Add `AZURE_DEVOPS_ACCESS_TOKEN` as the `Name` and the Azure DevOps personal access token created above as the value.
+- `AZURE_DEVOPS_ORGANIZATION`: Add `AZURE_DEVOPS_ORGANIZATION` as the `Name` and the Azure DevOps organization noted above as the value.
+- `AZURE_DEVOPS_PROJECT`: Add `AZURE_DEVOPS_PROJECT` as the `Name` and the Azure DevOps project noted above as the value.
+
+Steps to create the Codespace secrets. Complete for secret noted above:
+
+- Navigate to the `Settings` tab in this repo
+- Find `Secrets` and click the down arrow
+- Click `Codespaces`
+- Click `New Codespaces Secret` to create a new secret
+- Name the secret as noted above
+- Paste in the value noted above
+- Click `Add Secret`
+
+## Action secrets
+Please add the following Action secrets.
+
+- `AZURE_DEVOPS_ACCESS_TOKEN`: Add `AZURE_DEVOPS_ACCESS_TOKEN` as the `Name` and the Azure DevOps personal access token created above as the value.
+
+Steps to create the Codespace secret. Complete for secret noted above:
+
+- Navigate to the `Settings` tab in this repo
+- Find `Secrets` and click the down arrow
+- Click `Actions`
+- Click `New Repository Secret` to create a new secret
+- Name the secret as noted above
+- Paste in the vale noted above
+- Click `Add Secret`
 
 ## Azure DevOps project creation
 
-1. Add your Azure DevOps personal access token to the Actions **Secrets** tab.
-    - Navigate to the `Settings` tab in this repo
-    - Find `Secrets` and click the down arrow
-    - Click `Actions`
-    - Click `New Repository Secret` to create a new secret.
-    - Name the secret `AZURE_DEVOPS_ACCESS_TOKEN`
-    - Paste in the Azure DevOps PAT generated previously
-    - Click `Add Secret`
-
-2. Add Azure DevOps personal access token, project, and org to the CODESPACES **Secrets** tab.
-    - Navigate to the `Settings` tab in your repo
-    - Find `Secrets` and click the down arrow
-    - Click `Codespaces`
-    - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `AZURE_DEVOPS_ACCESS_TOKEN`
-    - Paste in the Azure DevOps PAT generated previously
-    - Click `Add Secret`
-    - Click `New Codespaces Secret` to create another secret.
-    - Name the secret `AZURE_DEVOPS_PROJECT`
-    - Type in the Azure DevOps project name. This should be `ValetBootstrap`
-    - Click `Add Secret`
-    - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `AZURE_DEVOPS_ORGANIZATION`
-    - Type in the Azure DevOps organization name
-    - Click `Add Secret`
-    
-3. Run the Actions workflow
-    - CLick the `Actions` tab
-    - Select the `Valet Bootstrap for Azure DevOps` action
-    - Click `Run Workflow`
-    - Input the Azure DevOps Organization name identified above
-    - Input the Azure DevOps user name of the user that created the Azure DevOps PAT above. This will be an email address
-    - Accept the default Azure DevOps project name or change it to one of your preference
-       - NOTE: The default project name is `ValetBootstrap`. This must be unique in your Azure DevOps Organization. If not, please choose a unique name.
-    - Click `Run Workflow`
-    - Verify the workflow completed successfully
+Run the Actions workflow:
+- CLick the `Actions` tab
+- Select the `Valet Bootstrap for Azure DevOps` action
+- Click `Run Workflow`
+- Input the Azure DevOps Organization name identified above
+- Input the Azure DevOps user name of the user that created the Azure DevOps PAT above. This will be an email address
+- Accept the default Azure DevOps project name or change it to one of your preference
+   - NOTE: The default project name is `ValetBootstrap`. This must be unique in your Azure DevOps Organization. If not, please choose a unique name.
+- Click `Run Workflow`
+- Verify the workflow completed successfully. If the workflow did not run successfully you will see a detailed error message.
 
 ### Example ###
 ![runaction](https://user-images.githubusercontent.com/26442605/167679930-9bdf6f4f-2e94-4145-aed3-8ee3e8e91d90.png)
