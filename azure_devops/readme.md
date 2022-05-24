@@ -67,11 +67,11 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Paste in the Azure DevOps PAT generated previously
     - Click `Add Secret`
     - Click `New Codespaces Secret` to create another secret.
-    - Name the secret `AZDO_PROJECT`
+    - Name the secret `AZURE_DEVOPS_PROJECT`
     - Type in the Azure DevOps project name. This should be `ValetBootstrap`
     - Click `Add Secret`
     - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `AZDO_ORG`
+    - Name the secret `AZURE_DEVOPS_ORGANIZATION`
     - Type in the Azure DevOps organization name
     - Click `Add Secret`
     
