@@ -17,5 +17,5 @@
 	"extensions": [
 		"ms-azuretools.vscode-docker",
 	],
-	"postCreateCommand": "gh extension install github/gh-valet && sudo bash .devcontainer/setupcodespace.sh ${VALET_PASSWORD} ${AZDO_PROJECT} ${AZDO_ORG} ${AZDO_TOKEN} ${GITHUB_USER} https://github.com/ || echo 'Could not auto-build. Skipping.' "
+	"postCreateCommand": "gh extension install github/gh-valet && sudo bash .devcontainer/setupcodespace.sh ${VALET_GHCR_PASSWORD} ${AZDO_PROJECT} ${AZDO_ORG} ${AZDO_TOKEN} ${GITHUB_USER} https://github.com/ || echo 'Could not auto-build. Skipping.' "
 }
