@@ -54,7 +54,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Find `Secrets` and click the down arrow
     - Click `Actions`
     - Click `New Repository Secret` to create a new secret.
-    - Name the secret `AZDOPAT`
+    - Name the secret `AZURE_DEVOPS_ACCESS_TOKEN`
     - Paste in the Azure DevOps PAT generated previously
     - Click `Add Secret`
 
@@ -63,7 +63,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     - Find `Secrets` and click the down arrow
     - Click `Codespaces`
     - Click `New Codespaces Secret` to create a new secret.
-    - Name the secret `AZDO_TOKEN`
+    - Name the secret `AZURE_DEVOPS_ACCESS_TOKEN`
     - Paste in the Azure DevOps PAT generated previously
     - Click `Add Secret`
     - Click `New Codespaces Secret` to create another secret.
