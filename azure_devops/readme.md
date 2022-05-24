@@ -23,7 +23,7 @@ This lab bootstraps a Valet environment using GitHub Codespaces and enables you 
     -   Select the following scopes:
         -   Agents Pool: `Read`
         -   Build: `Read & Execute`
-        -   Code: `Full`
+        -   Code: `Read & Write`
         -   Project and Team: `Read, Write, & Manage`
         -   Release: `Read`
         -   Service Connections: `Read`
