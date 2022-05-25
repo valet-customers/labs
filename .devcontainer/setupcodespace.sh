@@ -8,6 +8,8 @@ ghAccess="GITHUB_ACCESS_TOKEN="
 azdoAccess="AZURE_DEVOPS_ACCESS_TOKEN="
 ghInstanceUrl="GITHUB_INSTANCE_URL="
 
+cat valet/.env.local
+
 if [ -z "$1" -o -z "$5" ]
 then
      echo "Error: Docker Pull Valet not executing because GITHUB_USER and/or VALET_PASSWORD not set"
@@ -20,11 +22,13 @@ fi
 
 if [ -z "$1" -o -z "$2" -o -z "$3" -o -z "$4" -o -z "$6" ]
 then
+     value=`cat valet/.env.local.template`
+     echo "$value" > valet/.env.local
      echo "Error: Set envars not set, valid values not passed in"
 else
     azdoInstanceUrl="https://dev.azure.com/$3"
 
-    value=`cat valet/.env.local`
+    value=`cat valet/.env.local.template`
 
     result="${value/$azdoProject/$azdoProject$2}" 
     result="${result/$azdoOrg/$azdoOrg$3}" 
