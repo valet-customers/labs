@@ -5,6 +5,7 @@ In this lab, you will use Valet to `audit` an Azure DevOps organization. The `au
 - [Perform an audit](#perform-an-audit)
 - [View audit output](#view-audit-output)
 - [Review the pipelines](#review-the-pipelines)
+- [Next Lab](#next-lab)
 
 ## Prerequisites
 
@@ -60,3 +61,5 @@ The `audit` command grabs the yml, classic, and release pipelines from Azure Dev
 View the source yml and the proposed GitHub yml
 ![valet-audit-4](https://user-images.githubusercontent.com/26442605/169615630-8d700081-c631-4b2a-ab1c-e52503f7838f.png)
 
+### Next Lab
+[Dry run the migration of an Azure DevOps pipeline to GitHub Actions](valet-dry-run-lab.md)
