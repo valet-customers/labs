@@ -12,19 +12,6 @@ In this lab, you will create a custom plugin that transforms some of the existin
 2. Create or start a codespace in this repository (if not started)
 3. Complete the [Valet audit lab](valet-audit-lab.md).
 4. Complete the [Valet migrate lab](valet-migrate-lab.md).
-5. Verify or add the following values to the `./valet/.env.local` file. All values were created [here](/labs/azure_devops#readme)
-```
-GITHUB_ACCESS_TOKEN=<GithHub PAT generated>
-GITHUB_INSTANCE_URL=https://github.com/
-
-AZURE_DEVOPS_PROJECT=<Project identified>
-AZURE_DEVOPS_ORGANIZATION=<Org identified>
-AZURE_DEVOPS_INSTANCE_URL=<DevOps instance>
-AZURE_DEVOPS_ACCESS_TOKEN=<Token Generated>
-```
-### Example ###
-
-![envlocal](https://user-images.githubusercontent.com/26442605/169069638-0bfa8f89-eaa9-423b-b2b7-447248e63e2b.png)
 
 ## Identify the Azure DevOps pipeline ID to use
 You will need the `valet-mapper-example` Azure DevOps pipeline ID to perform the migration
