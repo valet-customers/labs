@@ -6,9 +6,9 @@ These Valet labs let you test-drive Valet by bootstrapping the environment of yo
 4. Proceed with running the labs!
 
 # Prerequisites
-1. Create your own GitHub Repository in your own GitHub Organization with Codespaces enabled using this Repository as a template. To do so: 
+1. Create your own GitHub Repository in your own GitHub Organization or under your user with Codespaces enabled using this Repository as a template. To do so: 
    - Navigate to the top of this Repository click `Use this template`
-   - Select the owner of the new Reposiotry. It could be your personal login or an Organization you belong to.
+   - Select the owner of the new Reposiotry. It could be your personal username or an Organization you belong to.
    - Name the Repository
    - Click `Create repository froom template`
    - Proceed to the labs inside of your new Repository.
