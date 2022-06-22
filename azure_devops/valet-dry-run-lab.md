@@ -9,7 +9,7 @@ In this lab, you will use the `valet dry-run` command to convert an Azure DevOps
 
 ## Prerequisites
 
-1. Follow all steps [here](/labs/azure_devops#readme) to set up your environment
+1. Follow all steps [here](../azure_devops#readme) to set up your environment
 2. Create or start a codespace in this repository (if not started)
 3. You have completed the [Valet audit lab](valet-audit-lab.md).
 
