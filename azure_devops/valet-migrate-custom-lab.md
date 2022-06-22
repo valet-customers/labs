@@ -8,7 +8,7 @@ In this lab, you will create a custom plugin that transforms some of the existin
 
 ## Prerequisites
 
-1. Follow all steps [here](/labs/azure_devops#readme) to set up your environment
+1. Follow all steps [here](../azure_devops#readme) to set up your environment
 2. Create or start a codespace in this repository (if not started)
 3. Complete the [Valet audit lab](valet-audit-lab.md).
 4. Complete the [Valet migrate lab](valet-migrate-lab.md).
