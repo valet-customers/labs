@@ -16,7 +16,7 @@ In this lab, you will use the `valet dry-run` command to convert an Azure DevOps
 ## Identify the Azure DevOps pipeline ID to use
 You will need a pipeline ID to perform the dry run
 1. Go to the `valet/ValetBootstrap/pipelines` folder
-2. Open the `valet/ValetBootstrap/pipelines/valet-pipeline1.json` file
+2. Open the `valet/ValetBootstrap/pipelines/valet-pipeline1.config.json` file
 3. Look for the `$.web.href` link
 4. At the end of the link is the pipeline ID. Copy or note the ID.
 
