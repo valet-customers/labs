@@ -21,7 +21,7 @@ You will need the `valet-mapper-example` Azure DevOps pipeline ID to perform the
 4. At the end of the link is the pipeline ID. Copy or note the ID.
 
 ### Example
-![configpipelineid](https://user-images.githubusercontent.com/26442605/161106098-3b9b05ec-ee5d-4b21-ab07-9f05f8cf1d98.png)
+![mapperprops](https://user-images.githubusercontent.com/26442605/175090567-525b97a7-60d2-41b7-9dcd-d559ca1c5bd7.png)
 
 ## Create a custom transformer
 
