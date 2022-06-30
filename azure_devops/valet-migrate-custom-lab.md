@@ -4,6 +4,7 @@ In this lab, you will create a custom plugin that transforms some of the existin
 - [Prerequisites](#prerequisites)
 - [Identify the Azure DevOps pipeline ID to use](#identify-the-azure-devops-pipeline-id-to-use)
 - [Create a custom transformer](#create-a-custom-transformer)
+- [Migrate with a custom transformer](#migrate-with-a-custom-transformer)
 - [View the pull request](#view-the-pull-request)
 
 ## Prerequisites
@@ -66,6 +67,8 @@ transform "DotNetCoreCLI@2" do |item|
   }
 end
 ```
+
+## Migrate with a custom transformer
 
 Verify you are in the valet director, then run the `migrate` command with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
 
