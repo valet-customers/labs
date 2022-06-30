@@ -67,13 +67,11 @@ transform "DotNetCoreCLI@2" do |item|
 end
 ```
 
-Run the `migrate` command with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
+Verify you are in the valet director, then run the `migrate` command with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
 
 ```
-cd valet
 gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb --output-dir migrate
 ```
-Now, from the `./valet` folder in your repository, run `gh valet migrate` with the custom transformer to migrate the pipeline to GitHub Actions: 
 
 ### Example
 ![valet-cm-1](https://user-images.githubusercontent.com/26442605/169618556-7c79b34b-6d4c-48d5-98e5-7f8d771117a5.png)
