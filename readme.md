@@ -1,6 +1,6 @@
 # Welcome to Valet labs!
 These Valet labs let you test-drive Valet by bootstrapping the environment of your choosing. The steps to get started with the Valet labs are:
-1. Create your own GitHub Repository. See [Prerequisites](#prerequisites) below.
+1. Get access to Valet and create your own GitHub Repository. See [Prerequisites](#prerequisites) below.
 2. Bootstrap your environment. The default page of the lab of your choosing will detail how to configure and run the action to bootstrap the environment. Currently these labs support [Azure DevOps](azure_devops).
 3. Run Valet via Codespaces. The codespace has docker running and will update to the latest Valet environment.
 4. Proceed with running the labs!
