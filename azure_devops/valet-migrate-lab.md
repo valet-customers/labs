@@ -33,7 +33,7 @@ You will use the codespace preconfigured in this repository to perform the migra
    - `GITHUB-ORG` with the name of your organization. 
    - `GITHUB-REPO` with the name of your repository. 
    - `PIPELINE-ID` with your pipeline ID.
-4. Verify you are in the valet directory, then run `valet migrate` to migrate the pipeline to GitHub Actions. 
+4. Run `gh valet migrate` from the `valet` directory to migrate the pipeline to GitHub Actions..
 ```
 gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --output-dir migrate
 ```
