@@ -6,7 +6,8 @@ These Valet labs let you test-drive Valet by bootstrapping the environment of yo
 4. Proceed with running the labs!
 
 # Prerequisites
-1. Create your own GitHub Repository in your own GitHub Organization or under your user with Codespaces enabled using this Repository as a template. To do so: 
+1. Get access to Valet by submitting an issue [GetValet](https://github.com/valet-customers/labs/issues/new?assignees=dkalmin&labels=getvalet&template=get-valet.md&title=Get+Valet) if you don't already have access. If you have access you will be able to use the [valet customer distribution](https://github.com/valet-customers/distribution).
+2. Create your own GitHub Repository in your own GitHub Organization or under your user with Codespaces enabled using this Repository as a template. To do so: 
    - Navigate to the top of this Repository click `Use this template`
    - Select the owner of the new Reposiotry. It could be your personal username or an Organization you belong to.
    - Name the Repository
