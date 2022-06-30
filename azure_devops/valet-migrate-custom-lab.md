@@ -70,7 +70,7 @@ end
 
 ## Migrate with a custom transformer
 
-Verify you are in the valet director, then run the `migrate` command with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
+Run the `gh valet migrate` command from the `valet` directory with the transformer again and pass it the custom plugin. Look at the result and see if it results in a successful build. 
 
 ```
 gh valet migrate azure-devops pipeline --target-url https://github.com/GITHUB-ORG/GITHUB-REPO --pipeline-id PIPELINE-ID --custom-transformers plugin/DotNetCoreCLI.rb --output-dir migrate
