@@ -6,7 +6,7 @@ These Valet labs let you test-drive Valet by bootstrapping the environment of yo
 4. Proceed with running the labs!
 
 # Prerequisites
-1. Valet is currently private and users must be onboarded prior to using the gh-valet CLI extension. Please reach out to [GitHub Sales](https://github.com/enterprise/contact) to inquire about being granted access.
+1. Valet is currently private and customers must be onboarded prior to using the gh-valet CLI extension. Please reach out to [GitHub Sales](https://github.com/enterprise/contact) to inquire about being granted access.
 2. Create your own GitHub Repository in your own GitHub Organization or under your user with Codespaces enabled using this Repository as a template. To do so: 
    - Navigate to the top of this Repository click `Use this template`
    - Select the owner of the new Reposiotry. It could be your personal username or an Organization you belong to.
