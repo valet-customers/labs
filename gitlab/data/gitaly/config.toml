@@ -1,0 +1,52 @@
+# Gitaly configuration file
+# This file is managed by gitlab-ctl. Manual changes will be
+# erased! To change the contents below, edit /etc/gitlab/gitlab.rb
+# and run:
+# sudo gitlab-ctl reconfigure
+
+socket_path = '/var/opt/gitlab/gitaly/gitaly.socket'
+
+runtime_dir = '/var/opt/gitlab/gitaly/run'
+bin_dir = '/opt/gitlab/embedded/bin'
+
+
+# Optional: export metrics via Prometheus
+prometheus_listen_addr = 'localhost:9236'
+
+
+[[storage]]
+name = 'default'
+path = '/var/opt/gitlab/git-data/repositories'
+
+[logging]
+format = 'json'
+dir = '/var/log/gitlab/gitaly'
+
+
+[auth]
+
+[git]
+bin_path = '/opt/gitlab/embedded/bin/git'
+use_bundled_binaries = true
+[gitaly-ruby]
+dir = "/opt/gitlab/embedded/service/gitaly-ruby"
+
+[gitlab-shell]
+dir = "/opt/gitlab/embedded/service/gitlab-shell"
+
+[gitlab]
+url = 'http+unix://%2Fvar%2Fopt%2Fgitlab%2Fgitlab-workhorse%2Fsockets%2Fsocket'
+relative_url_root = ''
+
+
+[hooks]
+
+
+
+[daily_maintenance]
+
+
+
+
+
+

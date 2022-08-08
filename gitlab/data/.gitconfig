@@ -1,0 +1,13 @@
+# This file is managed by gitlab-ctl. Manual changes will be
+# erased! To change the contents below, edit /etc/gitlab/gitlab.rb
+# and run `sudo gitlab-ctl reconfigure`.
+
+[user]
+        name = GitLab
+        email = gitlab@172.17.0.2
+[core]
+        autocrlf = input
+        alternateRefsCommand="exit 0 #"
+        fsyncObjectFiles = true
+[gc]
+        auto = 0

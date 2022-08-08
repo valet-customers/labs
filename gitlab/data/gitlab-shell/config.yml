@@ -1,0 +1,43 @@
+# This file is managed by gitlab-ctl. Manual changes will be
+# erased! To change the contents below, edit /etc/gitlab/gitlab.rb
+# and run `sudo gitlab-ctl reconfigure`.
+
+# GitLab user. git by default
+user: git
+
+# Url to gitlab instance. Used for api calls. May but need not end with a slash.
+gitlab_url: "http+unix://%2Fvar%2Fopt%2Fgitlab%2Fgitlab-workhorse%2Fsockets%2Fsocket"
+
+gitlab_relative_url_root: 
+
+http_settings:
+  
+#  user: someone
+#  password: somepass
+#  ca_file: /etc/ssl/cert.pem
+#  ca_path: /etc/pki/tls/certs
+
+# File used as authorized_keys for gitlab user
+auth_file: "/var/opt/gitlab/.ssh/authorized_keys"
+
+# SSL certificate dir where custom certificates can be placed
+# https://golang.org/pkg/crypto/x509/
+ssl_cert_dir: "/opt/gitlab/embedded/ssl/certs/"
+
+# Log file.
+# Default is gitlab-shell.log in the root directory.
+log_file: "/var/log/gitlab/gitlab-shell/gitlab-shell.log"
+
+# Log level. INFO by default
+log_level: 
+
+log_format: json
+
+# Audit usernames.
+# Set to true to see real usernames in the logs instead of key ids, which is easier to follow, but
+# incurs an extra API call on every gitlab-shell command.
+audit_usernames: 
+
+migration:
+  {"enabled":true,"features":[]}
+
