@@ -8,7 +8,7 @@ You will need to complete all of the setup instructions [here](./readme.md#confi
 
 1. Run the setup script in the codespace terminal to ensure the GitLab server is ready:
     ```bash
-    ./gitlab/bootstrap/setup.sh
+    source ./gitlab/bootstrap/setup.sh
     ```
 
 2. Open the GitLab server in a new browser tab:
