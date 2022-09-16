@@ -42,7 +42,7 @@ These steps **must** be completed prior to starting other labs.
 - Run the following command from the codespace terminal:
   
   ```bash
-  ./gitlab/bootstrap/setup.sh
+  source ./gitlab/bootstrap/setup.sh
   ```
 
 - After some time, a pop-up box should appear with a link to the URL for your GitLab server.
