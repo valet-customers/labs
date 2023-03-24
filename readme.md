@@ -1,3 +1,5 @@
+> **Warning**: GitHub Actions Importer is now [generally available](gh.io/actions-importer-ga). Please use the labs located in [actions/importer-labs](https://github.com/actions/importer-labs) moving forward. 🎉
+
 # GitHub Actions migrations powered by Valet
 
 Valet helps facilitate the migration of Azure DevOps, CircleCI, GitLab CI, Jenkins, and Travis CI pipelines to GitHub Actions. This repository contains learning paths that teach you how to use Valet and how to approach migrations to Actions.
